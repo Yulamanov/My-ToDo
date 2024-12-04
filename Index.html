@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo List</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main-container">
+    <div class="container">
+      <div class="title-wrap">
+        <div class="title">Todo List</div>
+        <div class="todo-icon"><img src="images/todo-icon.png" alt=""></div>
+      </div>
+      <div class="date-wrap">
+        <input type="date" name="" class="chooseDate" onchange="loadData()">
+      </div>
+      <div class="form">
+        <input type="text" class="inp" placeholder="Write your task">
+        <button class="inp-addBtn" onclick="addItem()"><img src="images/plus.png" alt=""></button>
+      </div>
+      <div class="alerts"></div>
+      <div class="list"></div>
+      <div class="saveBtn"><button onclick="saveList()">Save list</button></div>
+    </div>
+    <div class="saved-dates-wrap">
+      <p>You have saved lists for the following dates:</p>
+      <div class="saved-dates"></div>
+      <button class="clearBtn" onclick="clearStorage()">Clear all</button>
+    </div>
+</div>
+
+  <script src="process.js"></script>
+</body>
+</html>
